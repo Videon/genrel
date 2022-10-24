@@ -1,0 +1,55 @@
+#N canvas 512 226 1123 683 12;
+#X obj 67 576 outlet~;
+#X obj 78 440 *~ 0.5;
+#X obj 73 475 *~;
+#X obj 69 531 bob~;
+#X obj 159 512 hsl 128 15 180 18000 1 1 empty empty cutoff -2 -8 0
+10 -204786 -1 -1 5100 1;
+#X obj 161 544 hsl 128 15 0 4 0 1 empty empty resonance -2 -8 0 10
+-204786 -1 -1 3300 1;
+#X obj 162 236 hsl 128 15 1 7 0 1 empty empty fold -2 -8 0 10 -261682
+-1 -1 1600 1;
+#X obj 90 506 - 180;
+#X obj 81 154 mtof;
+#X obj 525 16 inlet;
+#X floatatom 538 217 5 0 0 0 - - -;
+#X obj 78 291 wvfold~;
+#X floatatom 592 189 5 0 0 0 - - -;
+#X obj 79 192 waveformosc~;
+#X text 569 15 notes;
+#X obj 685 14 inlet;
+#X text 733 11 parameters;
+#X text 694 50 TODO: for now \, only waveform is supported. Add other
+parameters as list.;
+#X obj 367 39 print;
+#X obj 773 395 adsr~;
+#X obj 522 108 unpack 0 0;
+#X text 164 105 Simple synth for pads;
+#X obj 758 116 unpack 0 0;
+#X obj 691 343 line~;
+#X obj 755 278 loadbang;
+#X msg 738 317 0.05;
+#X text 678 143 waveform \, velocity;
+#X obj 854 183 print;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 0 0;
+#X connect 4 0 7 0;
+#X connect 5 0 3 2;
+#X connect 6 0 11 1;
+#X connect 7 0 3 1;
+#X connect 8 0 13 0;
+#X connect 9 0 18 0;
+#X connect 9 0 20 0;
+#X connect 11 0 1 0;
+#X connect 13 0 11 0;
+#X connect 15 0 22 0;
+#X connect 20 0 8 0;
+#X connect 20 0 10 0;
+#X connect 20 1 12 0;
+#X connect 22 0 13 1;
+#X connect 22 1 23 0;
+#X connect 22 1 27 0;
+#X connect 23 0 2 1;
+#X connect 24 0 25 0;
+#X connect 25 0 23 1;

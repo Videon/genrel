@@ -1,0 +1,22 @@
+#N canvas 1407 280 700 500 12;
+#X obj 48 94 inlet;
+#X obj 116 95 inlet;
+#X obj 216 92 inlet;
+#X text 29 62 value a;
+#X text 105 63 value b;
+#X text 228 60 t;
+#X obj 137 245 expr $f1 + $f3*($f2-$f1);
+#X obj 138 207 trigger bang;
+#X obj 136 318 outlet;
+#X obj 136 274 clip;
+#X text 23 15 Clamped linear interpolator. Interpolates between a and
+b by t (range 0-1);
+#X connect 0 0 6 0;
+#X connect 0 0 9 1;
+#X connect 1 0 6 1;
+#X connect 1 0 9 2;
+#X connect 2 0 7 0;
+#X connect 2 0 6 2;
+#X connect 6 0 9 0;
+#X connect 7 0 6 0;
+#X connect 9 0 8 0;

@@ -1,0 +1,18 @@
+#N canvas 0 22 700 500 12;
+#X obj 65 77 inlet;
+#X text 65 49 bang;
+#X obj 66 275 outlet;
+#X text 78 301 float;
+#X obj 75 142 f;
+#X obj 105 140 + 1;
+#X obj 77 215 %;
+#X obj 193 79 inlet;
+#X text 182 51 total count;
+#X floatatom 166 285 5 0 0 0 - - -;
+#X connect 0 0 4 0;
+#X connect 4 0 5 0;
+#X connect 4 0 6 0;
+#X connect 5 0 4 1;
+#X connect 6 0 2 0;
+#X connect 6 0 9 0;
+#X connect 7 0 6 1;

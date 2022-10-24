@@ -1,0 +1,12 @@
+#N canvas 1618 566 785 500 12;
+#X obj 95 87 osc~ 440;
+#X obj 269 55 inlet;
+#X obj 97 134 expr~ if($v1 > $f2 \, 1 \, -1);
+#X text 93 27 freq;
+#X text 267 28 width;
+#X obj 98 183 outlet~;
+#X obj 96 56 inlet~;
+#X connect 0 0 2 0;
+#X connect 1 0 2 1;
+#X connect 2 0 5 0;
+#X connect 6 0 0 0;

@@ -1,0 +1,20 @@
+#N canvas 605 271 783 500 12;
+#X text 25 18 gate with randomized pass-through;
+#X obj 49 61 inlet trig;
+#X obj 27 243 outlet;
+#X obj 63 116 random 100;
+#X obj 196 62 inlet chance;
+#X obj 152 178 >;
+#X obj 156 273 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 62 177 5 0 0 0 - - -;
+#X floatatom 228 186 5 0 0 0 - - -;
+#X floatatom 230 266 5 0 0 0 - - -;
+#X connect 1 0 3 0;
+#X connect 3 0 5 0;
+#X connect 3 0 7 0;
+#X connect 4 0 5 1;
+#X connect 4 0 8 0;
+#X connect 5 0 2 0;
+#X connect 5 0 6 0;
+#X connect 5 0 9 0;

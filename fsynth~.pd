@@ -9,13 +9,13 @@
 #X obj 161 544 hsl 128 15 0 4 0 1 empty \$0-resonance resonance -2
 -8 0 10 -204786 -1 -1 0 1;
 #X obj 162 236 hsl 128 15 1 7 0 1 empty \$0-fold fold -2 -8 0 10 -261682
--1 -1 3900 1;
+-1 -1 167 1;
 #X obj 353 216 vsl 15 128 0 8000 0 0 empty \$0-a A 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 3100 1;
 #X obj 396 213 vsl 15 128 0 8000 0 1 empty \$0-d D 0 -9 0 10 -262144
--1 -1 2400 1;
+-1 -1 12700 1;
 #X obj 433 209 vsl 15 128 0 1 0 0 empty \$0-s S 0 -9 0 10 -262144 -1
--1 12700 1;
+-1 0 1;
 #X obj 468 203 vsl 15 128 0 8000 0 1 empty \$0-r R 0 -9 0 10 -262144
 -1 -1 0 1;
 #X obj 184 321 loadbang;
@@ -40,7 +40,6 @@ parameters as list.;
 #X obj 878 278 s \$0-s;
 #X obj 752 168 unpack 0 0 0 0 0 0;
 #X obj 998 283 s \$0-fold;
-#X obj 980 164 print;
 #X obj 218 428 t a a;
 #X obj 575 147 / 127 * 100;
 #X obj 1082 286 s \$0-cof;
@@ -60,19 +59,18 @@ parameters as list.;
 #X connect 15 0 19 0;
 #X connect 16 0 25 0;
 #X connect 17 0 2 0;
-#X connect 18 0 34 0;
+#X connect 18 0 33 0;
 #X connect 19 0 17 0;
 #X connect 21 0 31 0;
-#X connect 21 0 33 0;
 #X connect 24 0 3 1;
 #X connect 25 0 15 0;
-#X connect 25 1 35 0;
+#X connect 25 1 34 0;
 #X connect 31 0 19 1;
 #X connect 31 1 27 0;
 #X connect 31 2 28 0;
 #X connect 31 3 30 0;
 #X connect 31 4 29 0;
 #X connect 31 5 32 0;
-#X connect 34 0 24 0;
-#X connect 34 1 24 1;
-#X connect 35 0 18 0;
+#X connect 33 0 24 0;
+#X connect 33 1 24 1;
+#X connect 34 0 18 0;

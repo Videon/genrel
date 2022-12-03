@@ -1,0 +1,27 @@
+#N canvas 215 184 700 500 12;
+#X obj 243 284 metro 1 120 permin, f 19;
+#X obj 210 223 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 243 311 bng 25 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 373 250 /;
+#X msg 373 225 1 \$1;
+#X text 372 172 beat length;
+#X msg 243 234 tempo \$1 permin;
+#X floatatom 243 209 5 0 0 0 - - -;
+#X obj 245 177 inlet;
+#X obj 372 194 inlet;
+#X obj 192 178 inlet;
+#X text 175 152 toggle;
+#X text 247 153 bpm;
+#X obj 242 350 outlet;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 2 0 13 0;
+#X connect 3 0 0 1;
+#X connect 4 0 3 0;
+#X connect 6 0 0 0;
+#X connect 7 0 6 0;
+#X connect 8 0 7 0;
+#X connect 9 0 4 0;
+#X connect 10 0 1 0;

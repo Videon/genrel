@@ -7,7 +7,7 @@
 #X obj 45 216 / 1000;
 #X obj 111 256 line;
 #X obj 112 295 outlet;
-#X text 25 9 outputs gradual noise \, interpolating between random
+#X text 25 9 outputs gradient noise \, interpolating between random
 values;
 #X connect 0 0 2 0;
 #X connect 0 0 4 0;

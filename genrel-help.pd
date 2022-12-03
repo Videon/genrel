@@ -1,1 +1,34 @@
-#N canvas 0 22 700 500 12;
+#N canvas 1040 282 700 769 12;
+#X obj 22 140 c_adsr, f 10;
+#X obj 20 104 adsr~, f 10;
+#X text 107 107 Old ADSR implementation. Don't use this.;
+#X text 108 143 Classic ADSR envelope.;
+#X obj 20 279 clock, f 10;
+#X obj 20 176 counter, f 10;
+#X obj 18 304 eucrth, f 10;
+#X text 107 306 Euclidean rhythm sequencer.;
+#X obj 20 430 fsynth~;
+#X obj 17 724 lerp;
+#X obj 16 755 lerp~;
+#X obj 16 586 lnois;
+#X obj 16 618 melodymaker;
+#X obj 17 651 pquant;
+#X obj 16 688 pscale;
+#X obj 23 855 quadpanner;
+#X obj 23 889 quadpanner2~;
+#X obj 21 206 rangate;
+#X obj 18 501 sampler~;
+#X obj 19 236 scalemaker;
+#X obj 18 468 waveforms;
+#X text 19 72 --------------- GENERAL ----------------;
+#X text 13 405 --------------- SOUND GENERATION ----------------;
+#X text 14 557 --------------- MATH ----------------;
+#X text 16 831 --------------- AUDIO FX ----------------;
+#X text 14 256 --------------- SEQUENCING ----------------;
+#X text 112 206 Random gate;
+#X text 22 2 --------------- GENERATIVE RELAXATION ----------------
+;
+#X text 22 19 --------- ADAPTIVE GENERATIVE MUSIC SYSTEM -----------
+;
+#X text 22 37 ------------------ SECRET STAGE 2022 -----------------
+;
